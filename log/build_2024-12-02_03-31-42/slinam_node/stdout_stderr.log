@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating slinam_node.egg-info
+writing slinam_node.egg-info/PKG-INFO
+writing dependency_links to slinam_node.egg-info/dependency_links.txt
+writing entry points to slinam_node.egg-info/entry_points.txt
+writing requirements to slinam_node.egg-info/requires.txt
+writing top-level names to slinam_node.egg-info/top_level.txt
+writing manifest file 'slinam_node.egg-info/SOURCES.txt'
+reading manifest file 'slinam_node.egg-info/SOURCES.txt'
+writing manifest file 'slinam_node.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/lib/python3.12/site-packages/slinam-node.egg-link (link to .)
+Installing slinam_serial script to /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/lib/slinam_node
+
+Installed /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node
+running symlink_data
+creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index
+creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index/resource_index
+creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index/resource_index/packages
+symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/resource/slinam_node -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index/resource_index/packages
+symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/package.xml -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/slinam_node
+symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/launch/joystick.launch.py -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/slinam_node
+creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/config
+creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/config/slinam_node
+symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/config/joystick.yaml -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/config/slinam_node

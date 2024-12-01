@@ -1,0 +1,28 @@
+[1.122s] Invoking command in '/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node': PYTHONPATH=/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/build --no-deps symlink_data
+[1.562s] running develop
+[1.853s] running egg_info
+[1.853s] creating slinam_node.egg-info
+[1.879s] writing slinam_node.egg-info/PKG-INFO
+[1.879s] writing dependency_links to slinam_node.egg-info/dependency_links.txt
+[1.879s] writing entry points to slinam_node.egg-info/entry_points.txt
+[1.880s] writing requirements to slinam_node.egg-info/requires.txt
+[1.880s] writing top-level names to slinam_node.egg-info/top_level.txt
+[1.880s] writing manifest file 'slinam_node.egg-info/SOURCES.txt'
+[1.935s] reading manifest file 'slinam_node.egg-info/SOURCES.txt'
+[1.936s] writing manifest file 'slinam_node.egg-info/SOURCES.txt'
+[1.963s] running build_ext
+[1.963s] Creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/lib/python3.12/site-packages/slinam-node.egg-link (link to .)
+[1.964s] Installing slinam_serial script to /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/lib/slinam_node
+[1.964s] 
+[1.965s] Installed /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node
+[1.965s] running symlink_data
+[1.965s] creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index
+[1.965s] creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index/resource_index
+[1.965s] creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index/resource_index/packages
+[1.965s] symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/resource/slinam_node -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/ament_index/resource_index/packages
+[1.965s] symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/package.xml -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/slinam_node
+[1.966s] symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/launch/joystick.launch.py -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/share/slinam_node
+[1.966s] creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/config
+[1.966s] creating /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/config/slinam_node
+[1.966s] symbolically linking /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/config/joystick.yaml -> /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/config/slinam_node
+[1.997s] Invoked command in '/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node' returned '0': PYTHONPATH=/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/install/slinam_node/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/build/slinam_node/build --no-deps symlink_data

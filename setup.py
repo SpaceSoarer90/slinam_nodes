@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'slinam_node'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name), glob('launch/*.launch.py')),
+        (os.path.join('config', package_name), glob('config/*.yaml'))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -20,7 +24,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'serial = slinam_node.slinam_serial:main',
+            'slinam_serial = slinam_node.slinam_serial:main',
         ],
     },
 )

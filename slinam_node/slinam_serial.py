@@ -38,8 +38,8 @@ class SlinamSerial(Node):
 
 
     def serial_callback(self):
-        print("Callback Time!")
-        print(self.serial.readline())
+        pass
+        # print("Callback Time!")
 
     def twist_to_serial(self, msg):
         # this is a differential drive system, so only l_x and a_z is used.
