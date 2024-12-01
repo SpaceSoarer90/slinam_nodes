@@ -12,6 +12,7 @@ class SlinamSerial(Node):
 
     def __init__(self):
         super().__init__('slinam_serial')
+        print("slinam_serial v1.0")
         self.subscription = self.create_subscription(TwistStamped, 
                                                      'cmd_vel', 
                                                      self.twist_to_serial,
@@ -36,7 +37,7 @@ class SlinamSerial(Node):
         # self.publisher = self.create_publisher(
 
 
-    def serialCallback(self):
+    def serial_callback(self):
         print("Callback Time!")
         print(self.serial.readline())
 
@@ -55,7 +56,10 @@ def main(args=None):
 
     slinam_serial = SlinamSerial()
 
-    rclpy.spin(slinam_serial)
+    while rclpy.ok():
+        rclpy.spin_once(slinam_serial)
+        slinam_serial.serial_callback();
+
 
     rclpy.shutdown()
 
