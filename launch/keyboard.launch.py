@@ -9,7 +9,7 @@ from ament_index_python.packages import get_package_share_directory
 def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
 
-    joy_params = os.path.join('/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes','config','joystick.yaml')
+    joy_params = os.path.join(get_package_share_directory('slinam_nodes'),'config','joystick.yaml')
 
     twist_stamper = Node(
             package='twist_stamper',
