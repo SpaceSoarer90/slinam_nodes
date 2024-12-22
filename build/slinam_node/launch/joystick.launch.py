@@ -1,1 +1,0 @@
-/home/mint/Documents/ros/workspaces/slinam_ws/src/slinam_nodes/launch/joystick.launch.py

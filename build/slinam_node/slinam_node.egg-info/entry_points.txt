@@ -1,2 +1,0 @@
-[console_scripts]
-slinam_serial = slinam_node.slinam_serial:main
