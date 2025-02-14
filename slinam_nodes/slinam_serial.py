@@ -1,8 +1,11 @@
 import rclpy
 import serial
+import can
 import sys
 import numpy as np
 import struct
+
+can.rc['interface'] = 'serial'
 
 from rclpy.node import Node
 
@@ -28,6 +31,7 @@ class SlinamSerial(Node):
         baud = sys.argv[2]
 
         self.serial = serial.Serial(port, baud)
+        self.can_bus = can.interface.Bus(channel=port, bitrate=baud)
         # self.counter = 0
 
         # self.serialTimer = self.create_timer(1.0 / 10.0, self.serialCallback)
@@ -38,7 +42,17 @@ class SlinamSerial(Node):
 
 
     def serial_callback(self):
-        pass
+        # pass
+        buf = self.can_bus.recv().data
+        # print(buf)
+        l_buf = buf[0:4]
+        r_buf = buf[4:8]
+
+        l_rpm = struct.unpack('f', l_buf)
+        r_rpm = struct.unpack('f', r_buf)
+        print(np.float32(l_rpm), np.float32(r_rpm))
+        # print(r_rpm)
+        # print(self.serial.read_until(b'\n'))
         # print("Callback Time!")
 
     def twist_to_serial(self, msg):
@@ -48,7 +62,7 @@ class SlinamSerial(Node):
 
         # each float32 is 4 bytes each
         self.serial.write(struct.pack('ff', l_x, a_z))
-        print("Twistie time!")
+        # print("Twistie time!")
         
 
 def main(args=None):
@@ -59,7 +73,6 @@ def main(args=None):
     while rclpy.ok():
         rclpy.spin_once(slinam_serial)
         slinam_serial.serial_callback();
-
 
     rclpy.shutdown()
 

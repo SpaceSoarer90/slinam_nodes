@@ -46,6 +46,8 @@ def generate_launch_description():
     slinam_serial_node = Node(
             package='slinam_nodes',
             executable='slinam_serial',
+            output='screen',
+            emulate_tty=True,
             arguments=['/dev/serial/by-id/usb-FTDI_FT232R_USB_UART_A5069RR4-if00-port0', '115200'],
             )
 
@@ -75,6 +77,6 @@ def generate_launch_description():
         teleop_node,
         twist_stamper,
         slinam_serial_node,
-        ydlidar_node,
+        # ydlidar_node,
         tf2_node
     ])
